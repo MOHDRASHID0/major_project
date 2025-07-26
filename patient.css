@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  background-color: #f0f2f5;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #fff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .p-img{
+    border-radius: 50%;
+    height:5vh;
+    width: 5vw;
+} */
+
+.user-info {
+  margin-bottom: 30px;
+}
+
+.user-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.user-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+.logout {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+nav a {
+  display: block;
+  margin: 10px 0;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.date {
+  color: #888;
+  font-size: 14px;
+}
+
+.welcome h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.welcome h3 {
+  margin-top: 5px;
+  font-size: 20px;
+  color: #007bff;
+}
+
+.welcome p {
+  margin: 10px 0 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-box button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.status-cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  gap: 10px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  font-size: 18px;
+}
+
+.card span {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #888;
+}
+
+.upcoming h2 {
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.no-booking {
+  color: #888;
+  font-style: italic;
+}
