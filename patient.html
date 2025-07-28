@@ -10,8 +10,10 @@
   <div class="container">
     <aside class="sidebar">
       <div class="user-info">
-        <h2>Saurabh Jasiwal</h2>
-        <p>jsaurabh1122@gmail.com</p>
+        <div class="user-profile">
+        <img src="./pimg.png" alt="User Avatar">
+        <h3>Saurabh Jasiwal</h3>
+        <p>jsaurabh112@gmail.com</p>
         <button class="logout">Log out</button>
       </div>
       <nav>
@@ -26,9 +28,10 @@
     </aside>
 
     <main class="main-content">
+      <div class="topbar">
       <header class="header">
-        <h1>Home</h1>
-        <span class="date">Today's Date: 2024-02-28</span>
+        <h1>User Dashboard</h1>
+        <span class="date"><b>Today's Date:</b> 28-07-2025</span>
       </header>
 
       <section class="welcome">
@@ -37,33 +40,120 @@
         <p>
           Haven’t any idea about doctors? No problem — jump to “All Doctors” or “Sessions” to track past and future appointment history. Find expected arrival times and session availability.
         </p>
-        <div class="search-box">
-          <input type="text" placeholder="Search Doctor and We will Find The Session Available" />
-          <button>Search</button>
-        </div>
       </section>
+      </div>
 
+      <div class="box1">
       <section class="stats">
         <div class="stat-item">
-          <h3>1</h3>
-          <p>All Doctors</p>
+          <img src="./doctor.png">
+          <h3>My Doctors</h3>
+          
         </div>
         <div class="stat-item">
-          <h3>3</h3>
-          <p>All Patients</p>
+          <img src="./schedule.png">
+          <h3>My Appointments</h3>
+          
         </div>
         <div class="stat-item">
-          <h3>0</h3>
-          <p>New Booking</p>
+          <img src="./medical-records.png">
+          <h3>My Medical History</h3>
         </div>
+        <button action="post" ><a href="./patient4.html"></a>
         <div class="stat-item">
-          <h3>0</h3>
-          <p>Today Sessions</p>
-        </div>
+          <img src="./setting.png">
+          <h3>Account Settings</h3>
+          
+        </div></button>
       </section>
+      </div>
+      
+      <div class="box2">
+      <section class="doctors-section">
+        <h2>My Doctors</h2>
+        <br>
+        <table>
+          <thead>
+            <tr>
+              <th>Doctor Name</th>
+              <th>Email</th>
+              <th>Specialties</th>
+              <th>Events</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Test Doctor</td>
+              <td>doctor@edoc.com</td>
+              <td>Accident and emergen</td>
+              <td>
+                <button class="view">View</button>
+                <button class="session">Sessions</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Test Doctor</td>
+              <td>doctor@edoc.com</td>
+              <td>Accident and emergen</td>
+              <td>
+                <button class="view">View</button>
+                <button class="session">Sessions</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Test Doctor</td>
+              <td>doctor@edoc.com</td>
+              <td>Accident and emergen</td>
+              <td>
+                <button class="view">View</button>
+                <button class="session">Sessions</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Test Doctor</td>
+              <td>doctor@edoc.com</td>
+              <td>Accident and emergen</td>
+              <td>
+                <button class="view">View</button>
+                <button class="session">Sessions</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Test Doctor</td>
+              <td>doctor@edoc.com</td>
+              <td>Accident and emergen</td>
+              <td>
+                <button class="view">View</button>
+                <button class="session">Sessions</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Test Doctor</td>
+              <td>doctor@edoc.com</td>
+              <td>Accident and emergen</td>
+              <td>
+                <button class="view">View</button>
+                <button class="session">Sessions</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Test Doctor</td>
+              <td>doctor@edoc.com</td>
+              <td>Accident and emergen</td>
+              <td>
+                <button class="view">View</button>
+                <button class="session">Sessions</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      </div>
 
+      <div class="box3">
       <section class="upcoming">
-        <h2>Your Upcoming Booking</h2>
+        <h2>My Appointments</h2>
+        <br>
         <table>
           <thead>
             <tr>
@@ -77,9 +167,19 @@
             <tr>
               <td colspan="4" style="text-align:center;">No upcoming bookings</td>
             </tr>
+            <tr>
+              <td colspan="4" style="text-align:center;">No upcoming bookings</td>
+            </tr>
+            <tr>
+              <td colspan="4" style="text-align:center;">No upcoming bookings</td>
+            </tr>
+            <tr>
+              <td colspan="4" style="text-align:center;">No upcoming bookings</td>
+            </tr>
           </tbody>
         </table>
       </section>
+      </div>
     </main>
   </div>
 </body>
