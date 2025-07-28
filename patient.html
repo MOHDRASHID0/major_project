@@ -3,75 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Patient Dashboard</title>
+  <title>Medical Booking Dashboard</title>
   <link rel="stylesheet" href="./patient.css" />
 </head>
 <body>
-  <div class="sidebar">
-    <!-- <div class="p-img">
-        <img src="./pimg.png">
-    </div> -->
-    <div class="user-info">
-      <h3>Saurabh Jasiwal</h3>
-      <p>jsaurabh122@gmail.com</p>
-      <button class="logout">Log out</button>
-    </div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">All Doctors</a>
-      <a href="#">Scheduled Sessions</a>
-      <a href="#">My Bookings</a>
-      <a href="#">Settings</a>
-    </nav>
-  </div>
-
-  <div class="main-content">
-    <header>
-      <h1>Home</h1>
-      <p class="date">Today's Date: 2024-02-28</p>
-    </header>
-
-    <section class="welcome">
-      <h2>Welcome!</h2>
-      <h3>Saurabh Jasiwal.</h3>
-      <p>
-        Haven't any idea about doctors? No problem! Jump to "All Doctors" or "Sessions".
-        Track your past and future appointments, and find expected arrival times of your doctor or consultant.
-      </p>
-      <div class="search-box">
-        <input type="text" placeholder="Search Doctor and We will Find The Session Available" />
-        <button>Search</button>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="user-info">
+        <h2>Saurabh Jasiwal</h2>
+        <p>jsaurabh1122@gmail.com</p>
+        <button class="logout">Log out</button>
       </div>
-    </section>
+      <nav>
+        <ul>
+          <li class="active">Home</li>
+          <li>All Doctors</li>
+          <li>Scheduled Sessions</li>
+          <li>My Bookings</li>
+          <li>Settings</li>
+        </ul>
+      </nav>
+    </aside>
 
-    <section class="status-cards">
-      <div class="card">1<br><span>All Doctors</span></div>
-      <div class="card">3<br><span>All Patients</span></div>
-      <div class="card">0<br><span>New Booking</span></div>
-      <div class="card">0<br><span>Today Sessions</span></div>
-    </section>
+    <main class="main-content">
+      <header class="header">
+        <h1>Home</h1>
+        <span class="date">Today's Date: 2024-02-28</span>
+      </header>
 
-    <section class="upcoming">
-      <h2>Your Upcoming Booking</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Appointment No.</th>
-            <th>Session Title</th>
-            <th>Doctor</th>
-            <th>Scheduled Date & Time</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colspan="4" class="no-booking">
-              <!-- Replace or style this area with image/text if booking exists -->
-              No upcoming booking found.
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <section class="welcome">
+        <h2>Welcome!</h2>
+        <h3>Saurabh Jasiwal.</h3>
+        <p>
+          Haven’t any idea about doctors? No problem — jump to “All Doctors” or “Sessions” to track past and future appointment history. Find expected arrival times and session availability.
+        </p>
+        <div class="search-box">
+          <input type="text" placeholder="Search Doctor and We will Find The Session Available" />
+          <button>Search</button>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="stat-item">
+          <h3>1</h3>
+          <p>All Doctors</p>
+        </div>
+        <div class="stat-item">
+          <h3>3</h3>
+          <p>All Patients</p>
+        </div>
+        <div class="stat-item">
+          <h3>0</h3>
+          <p>New Booking</p>
+        </div>
+        <div class="stat-item">
+          <h3>0</h3>
+          <p>Today Sessions</p>
+        </div>
+      </section>
+
+      <section class="upcoming">
+        <h2>Your Upcoming Booking</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Appoint. Number</th>
+              <th>Session Title</th>
+              <th>Doctor</th>
+              <th>Scheduled Date & Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="4" style="text-align:center;">No upcoming bookings</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
   </div>
 </body>
 </html>
