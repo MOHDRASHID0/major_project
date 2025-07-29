@@ -47,6 +47,11 @@ body {
   margin-bottom: 5px;
 }
 
+.logout a {
+  text-decoration: none;
+  color: white;
+}
+
 nav ul {
   list-style: none;
   margin-top: 30px;
@@ -106,6 +111,8 @@ nav .active {
   /* border: 1px solid black; */
   height: 30vh;
   width: 80vw;
+  
+  
 }
 .stats {
   display: grid;
@@ -123,6 +130,7 @@ nav .active {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 2px 2px 7px 0px ;
+
 }
 
 .stat-item h3 a {
@@ -146,6 +154,8 @@ nav .active {
   /* border: 1px solid black; */
   height: 70vh;
   width: 80vw;
+  scroll-behavior: smooth;
+
 }
 
 .doctors-section h2 {
