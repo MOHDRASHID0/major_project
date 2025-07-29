@@ -104,7 +104,7 @@ nav .active {
 
 .box1{
   /* border: 1px solid black; */
-  height: 25vh;
+  height: 30vh;
   width: 80vw;
 }
 .stats {
@@ -125,10 +125,17 @@ nav .active {
   box-shadow: 2px 2px 7px 0px ;
 }
 
-.stat-item h3 {
+.stat-item h3 a {
   font-size: 24px;
   color: #28a745;
+  text-decoration: none;
 }
+
+/* .start-item h3 a {
+  text-decoration: none;
+  color: #28a745;
+  font-size: 24px;
+} */
 
 .stat-item p {
   margin-top: 8px;
@@ -136,7 +143,7 @@ nav .active {
 }
 
 .box2{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 70vh;
   width: 80vw;
 }
@@ -167,8 +174,13 @@ table th, table td {
   border-radius: 4px;
 }
 
+.view a {
+  text-decoration: none;
+  color: white;
+}
+
 .box3{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 45vh;
   width: 80vw;
 }

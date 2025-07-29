@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f1f3f6;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.back {
+  padding: 8px 14px;
+  background: #28a745;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.back a {
+  text-decoration: none;
+  color: white;
+}
+
+.date {
+  font-size: 14px;
+  color: #666;
+}
+
+.settings-options .doctor-card {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+.doctor-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.doctor-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.doctor-details h2 {
+  margin-bottom: 5px;
+}
+
+.doctor-details h3 {
+  font-weight: normal;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.settings-options .option {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+.option h3 {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+}
+
+.option p {
+  color: #666;
+  margin-top: 8px;
+}

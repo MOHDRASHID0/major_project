@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f1f3f6;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.back {
+  padding: 8px 14px;
+  background: #28a745;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.back a {
+  text-decoration: none;
+  color: white;
+}
+
+.date {
+  font-size: 14px;
+  color: #666;
+}
+
+.medical-options .option {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+/* .option{
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+
+} */
+
+/* .logo{
+  border-radius: 20%;
+  height: 3vh;
+  width: 3vh;
+} */
+
+.option h2 a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+}
+
+.option p {
+  color: #666;
+  margin-top: 8px;
+}
