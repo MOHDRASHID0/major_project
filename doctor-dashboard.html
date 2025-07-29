@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medical Booking Dashboard</title>
+  <link rel="stylesheet" href="./doctor-dashboard.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="user-info">
+        <div class="user-profile">
+        <img src="./pimg.png" alt="User Avatar">
+        <h3>Saurabh Jasiwal</h3>
+        <p>jsaurabh112@gmail.com</p>
+        <button class="logout"><a href="./login.html">LogOut</a></button>
+      </div>
+      <nav>
+        <ul>
+          <li class="active">Home</li>
+          <li>👨‍⚕️ All Doctors</li>
+          <li>📅 Scheduled Sessions</li>
+          <li>📖 My Bookings</li>
+          <li>⚙️ Settings</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="topbar">
+      <header class="header">
+        <h1>Doctor Dashboard</h1>
+        <span class="date"><b>Today's Date:</b> 28-07-2025</span>
+      </header>
+
+      <section class="welcome">
+        <h2>Welcome!</h2>
+        <h3>Saurabh Jasiwal.</h3>
+        <p>
+          Haven’t any idea about doctors? No problem — jump to “All Doctors” or “Sessions” to track past and future appointment history. Find expected arrival times and session availability.
+        </p>
+      </section>
+      </div>
+      <br>
+      <hr>
+      <br>
+
+      <div class="box1">
+      <section class="stats">
+        <div class="stat-item">
+          <img src="./schedule (1).png">
+         <h3><a href="#my-doctors-section">My Schedule</a></h3>
+          
+        </div>
+        <div class="stat-item">
+          <img src="./schedule.png">
+          <h3><a href="./medical-history.html">My Appointments</a></h3>
+          
+        </div>
+        <div class="stat-item">
+          <img src="./medical-records.png">
+          <h3><a href="./medical-history.html">My Medical History</a></h3>
+        </div>
+        <div class="stat-item">
+          <img src="./setting.png">
+          <h3><a href="./settings.html">Account Settings</a></h3>
+          
+        </div>
+      </section>
+      </div>
+      
+      
+      <div class="box2" id="my-doctors-section">
+      <section class="doctors-section">
+        <h2>My Doctors</h2>
+        <br>
+        <table>
+          <thead>
+            <tr>
+              <th>Doctor Name</th>
+              <th>Email</th>
+              <th>Specialties</th>
+              <th>Events</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dr.Geetika Bhatia</td>
+              <td>doctor@edoc.com</td>
+              <td>Consultant laser & Aesthetic dentistry</td>
+              <td>
+                <button class="view"><a href="./doctor-info.html">View</a></button>
+                <button class="session">Sessions</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Dr. A A Hashmi</td>
+              <td>doctor@edoc.com</td>
+              <td>Neurology</td>
+              <td>
+                <button class="view">View</button>
+                <button class="session">Sessions</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Dr. A K Trivedi</td>
+              <td>doctor@edoc.com</td>
+              <td>Senior Consultant Interventional Cardiology</td>
+              <td>
+                <button class="view">View</button>
+                <button class="session">Sessions</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Dr. Abhijeet Singh Sachan</td>
+              <td>doctor@edoc.com</td>
+              <td>Neurosurgery</td>
+              <td>
+                <button class="view">View</button>
+                <button class="session">Sessions</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Dr. Abhimanyu Kapoor</td>
+              <td>doctor@edoc.com</td>
+              <td> Surgical Gastroenterology.</td>
+              <td>
+                <button class="view">View</button>
+                <button class="session">Sessions</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Dr. Abhinit Gupta</td>
+              <td>doctor@edoc.com</td>
+              <td>Critical Care</td>
+              <td>
+                <button class="view">View</button>
+                <button class="session">Sessions</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Dr. Abhishek Srivastava</td>
+              <td>doctor@edoc.com</td>
+              <td>Cardiology</td>
+              <td>
+                <button class="view">View</button>
+                <button class="session">Sessions</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      </div>
+      <br>
+
+      <div class="box3">
+      <section class="upcoming">
+        <h2>My Appointments</h2>
+        <br>
+        <table>
+          <thead>
+            <tr>
+              <th>Appoint. Number</th>
+              <th>Session Title</th>
+              <th>Doctor</th>
+              <th>Scheduled Date & Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="4" style="text-align:center;">No upcoming bookings</td>
+            </tr>
+            <tr>
+              <td colspan="4" style="text-align:center;">No upcoming bookings</td>
+            </tr>
+            <tr>
+              <td colspan="4" style="text-align:center;">No upcoming bookings</td>
+            </tr>
+            <tr>
+              <td colspan="4" style="text-align:center;">No upcoming bookings</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
