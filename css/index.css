@@ -71,6 +71,9 @@ nav {
     padding: 10px 30px;
     background-color: lightcyan;
     /* background-color: #fafafa; */
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     gap: 7px;
     border-bottom: 1px solid #ddd;
     position: relative;
@@ -88,7 +91,7 @@ h1 {
 nav a {
     text-decoration: none;
     color: #333;
-    font-size: 14px;
+    /* font-size: 14px; */
     padding: 6px 10px;
 }
 
