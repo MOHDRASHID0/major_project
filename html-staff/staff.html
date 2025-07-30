@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Dashboard</title>
+  <link rel="stylesheet" href="../css-staff/staff.css">
+</head>
+
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="user-info">
+        <div class="user-profile">
+          <img src="../asset/pimg.png" alt="User Avatar">
+          <h3>Priya Sharma</h3>
+          <p>priya.sharma@hospital.com</p>
+          <button class="logout"><a href="../html-staff/staff-login.html">LogOut</a></button>
+        </div>
+        <nav>
+          <ul>
+            <li class="active">Home</li>
+            <li>Tasks</li>
+            <li>Staff</li>
+            <li>Patient Reports</li>
+            <li>Account Settings</li>
+          </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+      <header class="top-bar">
+        <h1>Staff Dashboard</h1>
+        <span class="date"><b>Today's Date:</b> 2025-07-30</span>
+      </header>
+
+      <section class="welcome">
+        <h2>Welcome!</h2>
+        <h2 style="color:#007bff">Priya Sharma-Staff Incharge</h2>
+        <p>Thank you for being part of our team. You can access your tasks, schedule meetings, and manage daily
+          operations right here.</p>
+      </section>
+      <br>
+      <hr>
+      <br>
+
+      <div class="box1">
+        <section class="stats">
+          <div class="stat-item">
+            <img src="../asset/clipboard.png">
+            <h3><a href="#tasks-section">My Tasks</a></h3>
+
+          </div>
+          <div class="stat-item">
+            <img src="../asset/group.png">
+            <h3><a href="#session-section">My Staff</a></h3>
+
+          </div>
+          <div class="stat-item">
+            <img src="../asset/patient.png">
+            <h3><a href="../html-staff/staff-patient.html">Patient Reports</a></h3>
+          </div>
+          <div class="stat-item">
+            <img src="../asset/setting.png">
+            <h3><a href="../html-staff/staff-setting.html">Account Settings</a></h3>
+
+          </div>
+        </section>
+      </div>
+      <br>
+
+      <section class="appointments" id="tasks-section">
+        <h2>Tasks</h2>
+        <div class="filter-section">
+          <label>Date:</label>
+          <input type="text" placeholder="dd-mm-yyyy" />
+          <button class="filter-btn">Filter</button>
+        </div>
+        <table class="appointment-table">
+          <thead>
+            <tr>
+              <th>Staff Member</th>
+              <th>Staff Duty</th>
+              <th>Department</th>
+              <th>Dose</th>
+              <th>Patient Name</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Test Patient</td>
+              <td>1</td>
+              <td>1234567899</td>
+              <td>2050-01-01 @18:00</td>
+              <td>2022-06-03</td>
+              <td>Done</td>
+            </tr>
+            <tr>
+              <td>Test Patient</td>
+              <td>2</td>
+              <td>9871234560</td>
+              <td>2050-01-01 @18:00</td>
+              <td>2022-06-03</td>
+              <td>Pending</td>
+            </tr>
+            <tr>
+              <td>Test Patient</td>
+              <td>3</td>
+              <td>9876543210</td>
+              <td>2050-01-01 @18:00</td>
+              <td>2022-06-03</td>
+              <td>Done</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <br>
+
+
+    </main>
+  </div>
+</body>
+
+</html>
