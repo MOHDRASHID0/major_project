@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patient Info</title>
+  <link rel="stylesheet" href="./my-patient.css"/>
+</head>
+<body>
+  <div class="container">
+
+    <main class="main-content">
+      <header class="header">
+        <button class="back"><a href="./doctor.html">Back</a></button>
+        <h1>Patient Info</h1>
+        <span class="date"><b>Today's Date:</b> 2024-02-28</span>
+      </header>
+
+      <section class="appointments">
+        <h2>My Appointments</h2>
+        <div class="filter-section">
+          <label>Date:</label>
+          <input type="text" placeholder="dd-mm-yyyy" />
+          <button class="filter-btn">Filter</button>
+        </div>
+        <table class="appointment-table">
+          <thead>
+            <tr>
+              <th>Patient name</th>
+              <th>Appointment number</th>
+              <th>Email ID</th>
+              <th>Phone </th>
+              <th>Appointment Date</th>
+              <th>Events</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Test Patient</td>
+              <td>12</td>
+              <td>Test Session</td>
+              <td>2050-01-01 @18:00</td>
+              <td>2022-06-03</td>
+              <td><button class="cancel-btn">View</button></td>
+            </tr>
+            <tr>
+              <td>Test Patient</td>
+              <td>21</td>
+              <td>Test Session</td>
+              <td>2050-01-01 @18:00</td>
+              <td>2022-06-03</td>
+              <td><button class="cancel-btn">View</button></td>
+            </tr>
+            <tr>
+              <td>Test Patient</td>
+              <td>45</td>
+              <td>Test Session</td>
+              <td>2050-01-01 @18:00</td>
+              <td>2022-06-03</td>
+              <td><button class="cancel-btn">View</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      
+    </main>
+  </div>
+</body>
+</html>

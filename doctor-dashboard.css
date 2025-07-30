@@ -1,15 +1,11 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+/* styles.css */
 body {
+  margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f1f3f6;
+  background-color: #f8f9fa;
 }
 
-.container {
+.dashboard {
   display: flex;
   min-height: 100vh;
 }
@@ -69,42 +65,33 @@ nav .active {
   color: #333;
 }
 
-.main-content {
+.content {
   flex: 1;
   padding: 30px;
 }
-.topbar{
-  /* border: 1px solid black; */
-  height: 25vh;
-  width: 80vw;
-}
 
-.header {
+.top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
 }
 
 .date {
-  font-size: 14px;
-  color: #666;
+  font-size: 0.9em;
+  color: #555;
 }
 
 .welcome h2 {
-  color: #007bff;
-  font-size: 24px;
+  margin-bottom: 5px;
 }
 
-.welcome h3 {
-  margin-top: 6px;
-  font-size: 20px;
-}
-
-.welcome p {
-  margin-top: 12px;
-  color: #444;
-  font-size: 14px;
+.view-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .box1{
@@ -121,8 +108,8 @@ nav .active {
   margin: 30px 0;
 }
 .start-item, img{
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
 }
 .stat-item {
   background: #fff;
@@ -139,78 +126,119 @@ nav .active {
   text-decoration: none;
 }
 
-/* .start-item h3 a {
-  text-decoration: none;
-  color: #28a745;
-  font-size: 24px;
-} */
-
-.stat-item p {
-  margin-top: 8px;
-  color: #444;
-}
-
-.box2{
-  /* border: 1px solid black; */
-  height: 70vh;
-  width: 80vw;
-  scroll-behavior: smooth;
-
-}
-
-.doctors-section h2 {
-  margin-bottom: 10px;
-}
-
-table {
+.sessions table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #fff;
+  margin-top: 20px;
 }
 
-table th, table td {
-  padding: 12px;
+.sessions th, .sessions td {
   border: 1px solid #ccc;
+  padding: 10px;
   text-align: left;
 }
 
-.view, .session {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 6px 10px;
-  margin-right: 5px;
-  cursor: pointer;
-  border-radius: 4px;
+.appointments h2 {
+  margin-bottom: 20px;
 }
 
-.view a {
-  text-decoration: none;
+.filter-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-section input {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.appointment-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.appointment-table th, .appointment-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+.cancel-btn {
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.date-box {
+  text-align: right;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Filter Row */
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.filter-row input {
+  padding: 6px;
+  border: 1px solid #ccc;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Table */
+.session-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.session-table th,
+.session-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.view-btn,
+.cancel-btn {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.view-btn {
+  background-color: #03a9f4;
   color: white;
 }
 
-.box3{
-  /* border: 1px solid black; */
-  height: 45vh;
-  width: 80vw;
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
 }
-.upcoming h2 {
-  margin-bottom: 16px;
-}
-
-.upcoming table {
-  width: 100%;
-  border-collapse: collapse;
-  background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 0 6px rgba(0,0,0,0.05);
-}
-
-.upcoming th,
-.upcoming td {
-  padding: 12px;
-  border-bottom: 1px solid #eee;
-  text-align: left;
-}
-
